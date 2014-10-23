@@ -12,7 +12,7 @@
 
 downlinkMax is a 0.26KB Network Information API polyfill for `navigator.connection.downlinkMax` written in both CoffeeScript and JavaScript with AMD support.
 
-Unlike most polyfills that try to add in missing functionally, this script is currently focused on standardizing the available information across specification versions of the Network Information API and returning the estimated maximum downlink speed for the device.
+Unlike most polyfills that try to add in missing functionality, this script is currently focused on standardizing the available information across specification versions of the Network Information API and returning the estimated maximum downlink speed for the device.
 
 This information can then be used to make educated decisions about how to dynamically optimize the user experience. It could be something as simple as defaulting video playback to HD when the user has enough bandwidth, or removing costly elements from the page such as unnecessary images when the user's mobile browser is on 2G, to completely disabling site features because the experience would be unacceptable (such as video upload).
 
