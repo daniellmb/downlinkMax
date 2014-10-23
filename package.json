@@ -1,0 +1,71 @@
+{
+  "name": "downlinkmax",
+  "version": "0.1.0",
+  "description": "downlinkMax is a 0.26KB Network Information API polyfill for navigator.connection.downlinkMax written in both CoffeeScript and JavaScript with AMD support.",
+  "author": {
+    "name": "Daniel Lamb",
+    "email": "dlamb.open.source@gmail.com",
+    "url": "https://github.com/daniellmb"
+  },
+  "homepage": "https://github.com/daniellmb/downlinkmax",
+  "bugs": {
+    "url": "https://github.com/daniellmb/downlinkmax/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://daniellmb.mit-license.org"
+    }
+  ],
+  "maintainers": [],
+  "contributors": [],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/daniellmb/downlinkmax.git"
+  },
+  "main": "downlinkmax.js",
+  "scripts": {
+    "test": "gulp"
+  },
+  "keywords": [
+    "micro",
+    "framework",
+    "library",
+    "network",
+    "information",
+    "api",
+    "window",
+    "navigator",
+    "connection",
+    "polyfill",
+    "downlinkmax",
+    "detect",
+    "bandwidth",
+    "download",
+    "speed",
+    "downlink",
+    "coffeescript",
+    "javascript",
+    "amd"
+  ],
+  "dependencies": {
+  },
+  "devDependencies": {
+    "gulp": "*",
+    "gulp-jshint": "*",
+    "gulp-complexity": "*",
+    "gulp-rename": "*",
+    "gulp-replace": "*",
+    "gulp-uglify": "*",
+    "gulp-coffee": "*",
+    "gulp-karma": "*",
+    "karma-jasmine": "*",
+    "coffee-script": "*",
+    "karma-coffee-preprocessor": "*",
+    "karma-coverage": "*",
+    "karma-phantomjs-launcher": "*"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  }
+}
