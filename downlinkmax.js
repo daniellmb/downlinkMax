@@ -29,32 +29,32 @@ function downlinkmax() {
       // convert connection.type value to approximate downlink values
       // speed estimate is based on the median downlink value for common devices in megabits per second (Mbit/s)
       switch (connection.type) {
-        case 'none':
-          speed = 0;
-          break;
-        case '2g':
-          speed = 0.134;
-          break;
-        case 'bluetooth':
-        case 'cellular':
-          speed = 2;
-          break;
-        case '3g':
-          speed = 8.95;
-          break;
-        case '4g':
-          speed = 100;
-          break;
-        case 'ethernet':
-          speed = 550;
-          break;
-        case 'wifi':
-          speed = 600;
-          break;
-        // other, unknown etc.
-        default:
-          speed = limitless;
-          break;
+      case 'none':
+        speed = 0;
+        break;
+      case '2g':
+        speed = 0.134;
+        break;
+      case 'bluetooth':
+      case 'cellular':
+        speed = 2;
+        break;
+      case '3g':
+        speed = 8.95;
+        break;
+      case '4g':
+        speed = 100;
+        break;
+      case 'ethernet':
+        speed = 550;
+        break;
+      case 'wifi':
+        speed = 600;
+        break;
+      // other, unknown etc.
+      default:
+        speed = limitless;
+        break;
       }
       connection.downlinkMax = speed;
     }
