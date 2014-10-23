@@ -85,14 +85,14 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 
 
-[build-url]: https://travis-ci.org/daniellmb/downlinkmax
-[build-image]: http://img.shields.io/travis/daniellmb/downlinkmax.png
+[build-url]: https://travis-ci.org/daniellmb/downlinkMax
+[build-image]: http://img.shields.io/travis/daniellmb/downlinkMax.png
 
-[gpa-url]: https://codeclimate.com/github/daniellmb/downlinkmax
-[gpa-image]: https://codeclimate.com/github/daniellmb/downlinkmax.png
+[gpa-url]: https://codeclimate.com/github/daniellmb/downlinkMax
+[gpa-image]: https://codeclimate.com/github/daniellmb/downlinkMax.png
 
-[coverage-url]: https://codeclimate.com/github/daniellmb/downlinkmax/code?sort=covered_percent&sort_direction=desc
-[coverage-image]: https://codeclimate.com/github/daniellmb/downlinkmax/coverage.png
+[coverage-url]: https://codeclimate.com/github/daniellmb/downlinkMax/code?sort=covered_percent&sort_direction=desc
+[coverage-image]: https://codeclimate.com/github/daniellmb/downlinkMax/coverage.png
 
 [depstat-url]: https://david-dm.org/daniellmb/downlinkmax
 [depstat-image]: https://david-dm.org/daniellmb/downlinkmax.png?theme=shields.io
