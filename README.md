@@ -16,7 +16,7 @@ Unlike most polyfills that try to add in missing functionality, this script is c
 
 This information can then be used to make educated decisions about how to dynamically optimize the user experience. It could be something as simple as defaulting video playback to HD when the user has enough bandwidth, or removing costly elements from the page such as unnecessary images when the user's mobile browser is on 2G, to completely disabling site features because the experience would be unacceptable (such as video upload).
 
-The downlinkMax script works by checking if `connection.downlinkMax` exists, if so use it as is. Otherwise check if `connection.bandwidth` exists, if it does use that after converting it to megabits per second (the same value type downlinkMax), finally if neither of those are available convert the connection.type name to a low resolution speed estimate and return that.
+The downlinkMax script works by checking if `connection.downlinkMax` exists, if so use it as is. Otherwise check if `connection.bandwidth` exists, if it does use that after converting it to megabits per second (the same value type downlinkMax), finally if neither of those are available convert the connection.type name to a low resolution speed estimate and return that. When the API is not supported at all Infinity is returned as the maximum downlink speed.
 
 ## Examples
 
