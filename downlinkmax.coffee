@@ -10,11 +10,13 @@ downlinkmax = ->
   connection = nav.connection or nav.mozConnection or nav.webkitConnection or downlinkMax: limitless
 
   # check that the API doesn't already support downlinkMax
-  unless 'downlinkMax' of connection
+  # some android's downlinkMax is null
+  unless 'downlinkMax' of connection or not connection.downlinkMax?
 
     # assume NOT W3C Editor's Draft 09 October 2014
     # check if API supports bandwidth
-    if 'bandwidth' of connection
+    # some android's bandwidth is null
+    if 'bandwidth' of connection and connection.bandwidth?
 
       # assume W3C Working Draft 29 November 2012
       # standardize connection.bandwidth value by converting megabytes per second (MB/s) to megabits per second (Mbit/s)
@@ -38,6 +40,11 @@ downlinkmax = ->
         when 'ethernet'
           speed = 550
         when 'wifi'
+          speed = 600
+        # android browser stock implements wrong
+        # @todo need test another type connection 
+        # in android stock browser
+        when 2
           speed = 600
         # other, unknown etc.
         else
