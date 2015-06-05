@@ -39,12 +39,11 @@ downlinkmax = ->
           speed = 100
         when 'ethernet'
           speed = 550
-        when 'wifi'
-          speed = 600
-        # android browser stock implements wrong
+        # android browser stock implements wrong type 2
         # @todo need test another type connection 
         # in android stock browser
         when 2
+        when 'wifi'
           speed = 600
         # other, unknown etc.
         else
