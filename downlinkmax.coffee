@@ -20,10 +20,10 @@ downlinkmax = ->
 
       # assume W3C Working Draft 29 November 2012
       # standardize connection.bandwidth value by converting megabytes per second (MB/s) to megabits per second (Mbit/s)
-      connection.downlinkMax = connection.bandwidth * 8
+      speed = connection.bandwidth * 8
       
       # Some wrong number (negative?) or type
-      if isNaN(connection.downlinkMax) or connection.downlinkMax == 0
+      if isNaN(speed) or speed <= 0
         speed = limitless
     else
 
