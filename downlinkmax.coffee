@@ -15,12 +15,16 @@ downlinkmax = ->
 
     # assume NOT W3C Editor's Draft 09 October 2014
     # check if API supports bandwidth
-    # some android's bandwidth is null
-    if 'bandwidth' of connection and connection.bandwidth?
+    # some android's bandwidth is Infinity
+    if 'bandwidth' of connection and connection.bandwidth != limitless
 
       # assume W3C Working Draft 29 November 2012
       # standardize connection.bandwidth value by converting megabytes per second (MB/s) to megabits per second (Mbit/s)
       connection.downlinkMax = connection.bandwidth * 8
+      
+      # Some wrong number (negative?) or type
+      if not isNaN(connection.downlinkMax) or connection.downlinkMax == 0
+        speed = limitless
     else
 
       # assume W3C Working Draft 07 June 2011
@@ -48,7 +52,6 @@ downlinkmax = ->
         # other, unknown etc.
         else
           speed = limitless
-      connection.downlinkMax = speed
 
   # return the maximum downlink speed
-  connection.downlinkMax
+  speed
