@@ -13,6 +13,7 @@ downlinkmax = ->
   unless 'downlinkMax' of connection
 
     # assume NOT W3C Editor's Draft 09 October 2014
+    # https://w3c.github.io/netinfo/
     # check if API supports bandwidth
     if 'bandwidth' of connection
 
@@ -22,6 +23,7 @@ downlinkmax = ->
     else
 
       # assume W3C Working Draft 07 June 2011
+      # http://www.w3.org/TR/2011/WD-netinfo-api-20110607/
       # convert connection.type value to approximate downlink values
       # speed estimate is based on the median downlink value for common devices in megabits per second (Mbit/s)
       switch connection.type
