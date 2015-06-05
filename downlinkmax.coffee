@@ -23,7 +23,7 @@ downlinkmax = ->
       connection.downlinkMax = connection.bandwidth * 8
       
       # Some wrong number (negative?) or type
-      if not isNaN(connection.downlinkMax) or connection.downlinkMax == 0
+      if isNaN(connection.downlinkMax) or connection.downlinkMax == 0
         speed = limitless
     else
 
