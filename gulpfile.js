@@ -11,6 +11,7 @@
 'use strict';
 
 var gulp = require('gulp'),
+  gutil = require('gulp-util'),
     jshint = require('gulp-jshint'),
     complexity = require('gulp-complexity'),
     uglify = require('gulp-uglify'),
@@ -18,6 +19,7 @@ var gulp = require('gulp'),
     replace = require('gulp-replace'),
     karma = require('gulp-karma'),
     fs = require('fs'),
+    sourcemaps = require('gulp-sourcemaps'),
     source = 'downlinkmax.js',
     sourceMin = 'downlinkmax.min.js',
     specs = 'test/spec/*.spec.js',
@@ -50,10 +52,13 @@ gulp.task('test', function () {
 gulp.task('min', function () {
   return gulp.src(source)
     .pipe(rename(sourceMin))
-    .pipe(uglify({
-      outSourceMap: true
-    }))
+    .pipe(sourcemaps.init())
+    .pipe(uglify())
+    .on('error', function (error) {
+      gutil.log(gutil.colors.red('[Error]'), error.toString());
+    })
     .pipe(replace(/(.*)/, umdWrapper))
+    .pipe(sourcemaps.write('.'))
     .pipe(gulp.dest('.'));
 });
 
