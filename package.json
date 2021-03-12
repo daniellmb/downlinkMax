@@ -10,9 +10,9 @@
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/"
   },
-  "homepage": "https://github.com/daniellmb/downlinkmax",
+  "homepage": "https://github.com/johngeorgewright/downlinkmax",
   "bugs": {
-    "url": "https://github.com/daniellmb/downlinkmax/issues"
+    "url": "https://github.com/johngeorgewright/downlinkmax/issues"
   },
   "licenses": [
     {
