@@ -21,7 +21,7 @@
   "contributors": [],
   "repository": {
     "type": "git",
-    "url": "git://github.com/daniellmb/downlinkmax.git"
+    "url": "git://github.com/johngeorgewright/downlinkmax.git"
   },
   "main": "downlinkmax.js",
   "scripts": {
