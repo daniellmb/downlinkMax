@@ -1,5 +1,5 @@
 {
-  "name": "@johngeorgeright/downlinkmax",
+  "name": "@johngeorgewright/downlinkmax",
   "version": "0.1.2",
   "description": "downlinkMax is a 0.26KB Network Information API polyfill for navigator.connection.downlinkMax written in both CoffeeScript and JavaScript with AMD support.",
   "author": {
@@ -10,9 +10,9 @@
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/"
   },
-  "homepage": "https://github.com/johngeorgewright/downlinkmax",
+  "homepage": "https://github.com/daniellmb/downlinkmax",
   "bugs": {
-    "url": "https://github.com/johngeorgewright/downlinkmax/issues"
+    "url": "https://github.com/daniellmb/downlinkmax/issues"
   },
   "licenses": [
     {
